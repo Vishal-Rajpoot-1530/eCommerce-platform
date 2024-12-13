@@ -1,0 +1,18 @@
+.header ul{
+    list-style: none;
+    padding: 0;
+    display: flex;  
+    gap: 49px;  
+    overflow: auto;  
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 1px 10px rgb(213, 212, 212); 
+    
+}
+.header ul li sup{
+ color: red;
+}

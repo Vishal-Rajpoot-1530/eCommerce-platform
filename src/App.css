@@ -1,1 +1,14 @@
+ .app{
+    /* height: 100vh; */
+    /* background-color: aqua; */
+    display: flex;  
+  flex-wrap: wrap;
+ }
+
  
+ .app-body{
+    overflow:auto;
+    width: 100%;
+    padding:30px;
+    height: 100vh;
+ }
