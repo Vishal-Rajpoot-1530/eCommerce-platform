@@ -1,0 +1,6 @@
+.men{
+    display: flex;
+}
+.men ul{
+    list-style-type: none;
+}
