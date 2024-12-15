@@ -1,7 +1,7 @@
 export default function STUDIO(){
     return (
         <div className="studio">
-            studio
+          this is the   studio component
         </div>
     )
 }

@@ -1,7 +1,7 @@
 export default function Bag(){
     return (
         <div className="bag">
-            bag
+          this is the   bag
         </div>
     )
 }

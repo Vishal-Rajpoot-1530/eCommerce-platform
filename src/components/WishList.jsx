@@ -1,7 +1,7 @@
 export default function WishList(){
     return (
         <div className="wishlist">
-            wishlist
+           here is your all  wishlist
         </div>
     )
 }
