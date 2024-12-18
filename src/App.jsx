@@ -7,13 +7,13 @@ function App() {
 
 
   return (
-    <>
+    <div className='app_container'>
         <Header></Header>
       <div className='app'>
          <App_body></App_body>
          <Footer></Footer>
       </div>
-    </>
+    </div>
   )
 }
 
