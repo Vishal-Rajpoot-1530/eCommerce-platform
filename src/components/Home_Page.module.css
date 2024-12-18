@@ -1,4 +1,49 @@
 .homepage img{
-    display: flex;
-  width: 100vw;
+   
+  width: 100%;
+  
 }
+.topbrand{
+  display: flex;
+  width: 400%;
+  animation: stepScroll 20s linear infinite; 
+   
+}
+.topbrand img{
+  height: 25vw;
+}
+.homepage{
+  width: 100vw;
+  overflow: hidden;
+
+}
+ 
+@keyframes stepScroll {
+  0% {
+    transform: translateX(0%); /* Start at the first image */
+  }
+  25% {
+    transform: translateX(-25%); /* Move to the second image */
+  }
+  50% {
+    transform: translateX(-50%); /* Move to the third image */
+  }
+  75% {
+    transform: translateX(-75%); /* Move to the fourth image */
+  }
+  100% {
+    transform: translateX(0%); /* Loop back to the first image */
+  }
+}
+
+.homepage pre{
+  width: 100vw;
+  margin: 40px 10px;
+   text-wrap: wrap;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-shadow:1px 1px 4px rgb(111, 110, 110);
+  
+}
+
+ 

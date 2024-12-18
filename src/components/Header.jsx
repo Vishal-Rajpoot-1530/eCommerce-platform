@@ -11,7 +11,7 @@ export default function Header() {
     <div
       className={css.header}
       style={{
-        backgroundColor: showPopup ? "rgba(0, 0, 0, 0.5)" : "transparent",
+        backgroundColor: showPopup ? "rgba(0, 0, 0, 0.5)" :  "white",
 
         transition: "background-color 0.2s ease",
       }}

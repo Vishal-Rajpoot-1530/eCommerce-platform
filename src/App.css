@@ -1,23 +1,14 @@
  .app{
-    /* height: 100vh; */
-    /* background-color: aqua; */
-    display: flex;  
-  flex-wrap: wrap;
+   padding: 0; 
+    /* display: flex;   */
+  /* flex-wrap: wrap; */
   position: absolute;
-  width: 100vw;
+  width: 97vw;
    
+  margin-top: 130px;
+  overflow-X: hidden;
  }
 
  
- .app-body{
-    overflow:auto;
-    width: 100%;
-    padding:30px;
-    height: 100vh;
- }
-
- .app_container{
-   width: 100vw;
-   /* background-color: antiquewhite; */
-   overflow: hidden;
- }
+ 
+  
