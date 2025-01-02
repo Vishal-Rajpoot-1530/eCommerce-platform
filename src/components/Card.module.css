@@ -1,0 +1,22 @@
+.card{
+    /* background-color:greenyellow ; */
+    width: 15vw;
+    height: 23vw;
+
+}
+
+.card img{
+    height: 16vw;
+    display: block;
+}
+
+/* .card h5{
+     position: relative;  
+      top: -30%;  
+      left: 10%;  
+      /* transform: translate(-50%, -50%);   */
+      /* color: white; Makes the text visible over the image */
+      /* font-size: 20px; 
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  } 
+      */ 

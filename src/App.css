@@ -1,14 +1,9 @@
- .app{
-   padding: 0; 
-    /* display: flex;   */
+.app {
+  padding: 0;
+  /* display: flex;   */
   /* flex-wrap: wrap; */
   position: absolute;
-  width: 97vw;
-   
+  width: 100vw;
   margin-top: 130px;
-  overflow-X: hidden;
- }
-
- 
- 
-  
+  overflow-x: hidden;
+}

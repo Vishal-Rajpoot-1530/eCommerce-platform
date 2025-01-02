@@ -6,7 +6,7 @@
 .topbrand{
   display: flex;
   width: 400%;
-  animation: stepScroll 20s linear infinite; 
+  animation: linearScroll 8s steps(4) infinite; 
    
 }
 .topbrand img{
@@ -18,18 +18,18 @@
 
 }
  
-@keyframes stepScroll {
+@keyframes linearScroll {
   0% {
     transform: translateX(0%); /* Start at the first image */
   }
   25% {
-    transform: translateX(-25%); /* Move to the second image */
+    transform: translateX(-100%); /* Move to the second image */
   }
   50% {
-    transform: translateX(-50%); /* Move to the third image */
+    transform: translateX(-100%); /* Move to the third image */
   }
   75% {
-    transform: translateX(-75%); /* Move to the fourth image */
+    transform: translateX(-100%); /* Move to the fourth image */
   }
   100% {
     transform: translateX(0%); /* Loop back to the first image */
@@ -45,5 +45,32 @@
   text-shadow:1px 1px 4px rgb(111, 110, 110);
   
 }
+.medalbrand{
+  display: flex;
+flex-wrap: nowrap;
+width: fit-content;
+animation: stepScroll 12s  infinite ease-in-out ; 
+}
 
+.globalbrand{
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+  animation: stepScroll 12s  infinite ease-in-out; 
+}
+@keyframes stepScroll {
+  0% { transform: translateX(0%); }
+  25% { transform: translateX(-20%); }
+  50% { transform: translateX(-40%); }
+  75% { transform: translateX(-63%); }
+  100% { transform: translateX(0%); }
+}
+
+.categorybrand{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+   
+}
  

@@ -1,4 +1,35 @@
-.footer{
-    background-color: aqua;
-    width: 100%;
+.footer {
+  background-color: rgba(247, 248, 248, 0.45);
+  width: 100ve;
+   padding: 60px;
+   
 }
+.f1 {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+   
+}
+.f2 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+.f2 h4 {
+  text-wrap: nowrap;
+}
+.f2 hr {
+  width: 100%;
+  list-style: none;
+  display: inline;
+}
+.footer li{
+    list-style: none;
+     
+}
+
+.p2{
+    display: flex;
+    justify-content: space-between;
+}
+ 
