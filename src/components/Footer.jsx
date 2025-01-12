@@ -66,8 +66,8 @@ export default function Footer() {
           </p>
           <div className={css.p2}>
             <p>In case of any concern,<a href="/contact-us">Contact Us</a></p>
-            <p>2024 www.myntra.com.All rights reserved.</p>
-            <p>A Flipkart company</p>
+            <p>2024 www.vr-shopping.com.All rights reserved.</p>
+            <p>An e-Commerce company</p>
           </div>
         </div>
       </div>

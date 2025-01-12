@@ -1,115 +1,56 @@
 import { Link } from "react-router";
 import css from "./Header.module.css";
-import PopUp from "./PopUp";
-import { useState } from "react";
+
 export default function Header() {
-  const [showPopup, setShowPopup] = useState(false);
-
-  const handleMouseEnter = () => setShowPopup(true);
-  const handleMouseLeave = () => setShowPopup(false);
   return (
-    <div
-      className={css.header}
-      style={{
-        backgroundColor: showPopup ? "rgba(0, 0, 0, 0.5)" :  "white",
-
-        transition: "background-color 0.2s ease",
-      }}
-    >
-      <ul>
+    <div className={css.header}>
+      <div className={css.logo_container}>
         <Link to="/">
-          <img src="react.svg" alt="Logo" />
+          <img src="mylogo3.png" alt="Logo" />
         </Link>
-        <li>
-          <Link
-            to="/men"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            MEN
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/women"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            WOMEN
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/kids"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            KIDS
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/home and living"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            HOME&LIVING
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/beauty"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            BEAUTY
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/studio"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            STUDIO<sup> new</sup>
-          </Link>
-        </li>
-        <div className={css.input}>
-          <span>&#9740;</span>
-          <input
-            type="text"
-            placeholder="search for products, brand and more"
-          />
+      </div>
+      <nav className={css.nav_bar}>
+        <Link to="/men">MEN</Link>
+        <Link to="/women">WOMEN</Link>
+        <Link to="/kids">KIDS</Link>
+        <Link to="/home and living">HOME&LIVING</Link>
+        <Link to="/beauty">BEAUTY</Link>
+        <Link to="/studio">
+          STUDIO<sup> new</sup>
+        </Link>
+      </nav>
+      <div className={css.search_bar}>
+        <span className={`${"material-symbols-outlined"} ${ css.search_icon}`}>
+        🔍
+        </span>
+        <input
+          className={css.search_input}
+          placeholder="Search for products, brands and more"
+        />
+      </div>
+      <div className={css.action_bar}>
+        <div className={css.action_container}>
+          <span className={`${"material-symbols-outlined"} ${"action_icon"}`}>
+          👨🏻
+          </span>
+          <span className={css.action_name}>Profile</span>
         </div>
-        <li>
-          <Link
-            to="/profile"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            Profile
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/wishlist"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            WishList
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/bag"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            Bag
-          </Link>
-        </li>
-      </ul>
-      {showPopup && <PopUp />}
+
+        <div className={css.action_container}>
+          <span className={`${"material-symbols-outlined"} ${"action_icon"}`}>
+          ❤︎
+          </span>
+          <span className={css.action_name}>Wishlist</span>
+        </div>
+
+        <div className={css.action_container}>
+          <span className={`${"material-symbols-outlined"} ${"action_icon"}`}>
+          🛍️
+          </span>
+          <span className={css.action_name}>Bag</span>
+        </div>
+        <sup className={css.sup_script}>0</sup>
+      </div>
     </div>
   );
 }

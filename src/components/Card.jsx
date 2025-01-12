@@ -9,7 +9,7 @@ export default function Card({ cardDetails, brands }) {
             <h5> min 50% off</h5>
           </div>
         ) : (
-          <div></div>
+          <></>
         )
       )}
     </>

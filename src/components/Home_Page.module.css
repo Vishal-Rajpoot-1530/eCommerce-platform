@@ -6,11 +6,13 @@
 .topbrand{
   display: flex;
   width: 400%;
-  animation: linearScroll 8s steps(4) infinite; 
+  animation: linearScroll 16s ease-in-out  infinite; 
    
 }
 .topbrand img{
   height: 25vw;
+  min-width: 100vw;
+  max-width: 100vw;
 }
 .homepage{
   width: 100vw;
@@ -20,19 +22,19 @@
  
 @keyframes linearScroll {
   0% {
-    transform: translateX(0%); /* Start at the first image */
+    transform: translateX(0vw);  
   }
   25% {
-    transform: translateX(-100%); /* Move to the second image */
+    transform: translateX(-100vw);  
   }
   50% {
-    transform: translateX(-100%); /* Move to the third image */
+    transform: translateX(-200vw);  
   }
   75% {
-    transform: translateX(-100%); /* Move to the fourth image */
+    transform: translateX(-300vw); 
   }
   100% {
-    transform: translateX(0%); /* Loop back to the first image */
+    transform: translateX(0vw);  
   }
 }
 
@@ -60,9 +62,8 @@ animation: stepScroll 12s  infinite ease-in-out ;
 }
 @keyframes stepScroll {
   0% { transform: translateX(0%); }
-  25% { transform: translateX(-20%); }
-  50% { transform: translateX(-40%); }
-  75% { transform: translateX(-63%); }
+  30% { transform: translateX(-10%); }
+  65% { transform: translateX(-25%); }
   100% { transform: translateX(0%); }
 }
 
@@ -70,7 +71,16 @@ animation: stepScroll 12s  infinite ease-in-out ;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
+  /* background-color: antiquewhite; */
+  
    
+}
+
+.categorybrand div{
+  border: 3px solid beige;
+  padding: 4px ;
+  box-shadow: 1px 1px 10px rgb(124, 124, 124);
+  height: fit-content;
 }
  
